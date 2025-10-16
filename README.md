@@ -1,14 +1,13 @@
-
 # Portfólio de Patricia Queiroz
 
 Bem-vindo ao meu portfólio! Aqui você encontrará uma coleção dos meus projetos, habilidades e experiências profissionais. Este repositório serve como uma vitrine do meu trabalho em desenvolvimento web, com foco em tecnologias modernas e práticas de mercado.
 
 ## 🚀 Tecnologias Utilizadas
 
-* **Frontend**: HTML5, CSS3, JavaScript, TypeScript
-* **Frameworks e Bibliotecas**: React, shadcn-ui, Tailwind CSS
-* **Ferramentas de Build**: Vite
-* **Controle de versão**: Git e GitHub
+- **Frontend**: HTML5, CSS3, JavaScript, TypeScript
+- **Frameworks e Bibliotecas**: React, shadcn-ui, Tailwind CSS
+- **Ferramentas de Build**: Vite
+- **Controle de versão**: Git e GitHub
 
 ## 📂 Estrutura do Repositório
 
@@ -29,7 +28,7 @@ patricia-queiroz-portfolio/
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/PatyGit-Admin/patricia-queiroz-portfolio.git
+git clone https://github.com/PatQuei/portifolio_Patricia.git
 ```
 
 2. Acesse o diretório do projeto:
@@ -81,8 +80,6 @@ O projeto pode ser publicado em qualquer serviço de hospedagem para aplicaçõe
 
 ## 📬 Contato
 
-* **LinkedIn**: [linkedin.com/in/patyqueiroz](https://www.linkedin.com/in/patyqueiroz/)
-* **GitHub**: [github.com/PatQuei](https://github.com/PatQuei)
-* **E-mail**: [patriciaqueiroz35@email.com](mailto:patriciaqueiroz35@email.com)
-
-
+- **LinkedIn**: [linkedin.com/in/patyqueiroz](https://www.linkedin.com/in/patyqueiroz/)
+- **GitHub**: [github.com/PatQuei](https://github.com/PatQuei)
+- **E-mail**: [patriciaqueiroz35@email.com](mailto:patriciaqueiroz35@email.com)
