@@ -5,6 +5,15 @@ const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const menuItems = [
+    { id: "sobre", label: "sobre" },
+    { id: "skills", label: "habilidades" },
+    { id: "projetos", label: "projetos" },
+    { id: "eventos", label: "eventos" },
+    { id: "artigos", label: "Trabalho de Graduação" },
+    { id: "contato", label: "contato" },
+  ];
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -40,17 +49,15 @@ const Navigation = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            {["sobre", "projetos", "eventos", "artigos", "contato"].map(
-              (item) => (
-                <button
-                  key={item}
-                  onClick={() => scrollToSection(item)}
-                  className="font-body text-sm uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors"
-                >
-                  {item}
-                </button>
-              )
-            )}
+            {menuItems.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className="font-body text-sm uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors"
+              >
+                {item.label}
+              </button>
+            ))}
           </div>
 
           {/* Mobile Menu Button */}
@@ -66,17 +73,15 @@ const Navigation = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-6 pb-6 animate-fade-in">
             <div className="flex flex-col gap-4">
-              {["sobre", "projetos", "eventos", "artigos", "contato"].map(
-                (item) => (
-                  <button
-                    key={item}
-                    onClick={() => scrollToSection(item)}
-                    className="font-body text-sm uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors text-left"
-                  >
-                    {item}
-                  </button>
-                )
-              )}
+              {menuItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className="font-body text-sm uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors text-left"
+                >
+                  {item.label}
+                </button>
+              ))}
             </div>
           </div>
         )}
