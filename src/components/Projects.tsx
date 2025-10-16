@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import project1 from "@/assets/bits_e_batons.png";
 import project2 from "@/assets/biblioteca.png";
 import project3 from "@/assets/cvbuilder.png";
@@ -13,6 +13,8 @@ const projects = [
     results:
       "1ª experiência com IA | Projeto voltado à inclusão feminina na tecnologia",
     tags: ["IA Generativa", "Diversidade", "Podcast", "Impacto Social"],
+    repoUrl: "https://github.com/PatQuei/Projeto_Podcast",
+    liveUrl: null,
   },
   {
     title: "Biblioteca Digital Interativa",
@@ -22,6 +24,8 @@ const projects = [
     results:
       "Desenvolvimento colaborativo | Foco em educação e acesso à leitura",
     tags: ["Desenvolvimento", "Educação", "Inclusão Digital", "React"],
+    repoUrl: "https://github.com/PatQuei/biblioteca",
+    liveUrl: null,
   },
   {
     title: "CV Builder: Currículos Inteligentes com IA",
@@ -36,6 +40,9 @@ const projects = [
       "Automação",
       "Empregabilidade",
     ],
+    repoUrl:
+      "https://github.com/PatQuei/CV-Builder-AI---Requisitos-do-Projeto---Grupo-DOMinadores",
+    liveUrl: null,
   },
   {
     title: "Portfólio Profissional — Paulo Emilio Pucci",
@@ -45,6 +52,8 @@ const projects = [
     results:
       "Design + Identidade | Projeto colaborativo de posicionamento profissional",
     tags: ["Design", "Storytelling", "Portfólio", "UI/UX"],
+    repoUrl: null,
+    liveUrl: "https://paulopucci.com",
   },
 ];
 
@@ -98,10 +107,30 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                <button className="text-primary font-body text-sm uppercase tracking-wider flex items-center gap-2 hover:gap-3 transition-all">
-                  Ver detalhes
-                  <ExternalLink size={16} />
-                </button>
+                <div className="flex gap-3">
+                  {project.repoUrl && (
+                    <a
+                      href={project.repoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary font-body text-sm uppercase tracking-wider flex items-center gap-2 hover:gap-3 transition-all"
+                    >
+                      <Github size={16} />
+                      Repositório
+                    </a>
+                  )}
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary font-body text-sm uppercase tracking-wider flex items-center gap-2 hover:gap-3 transition-all"
+                    >
+                      <ExternalLink size={16} />
+                      Ver Site
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}
