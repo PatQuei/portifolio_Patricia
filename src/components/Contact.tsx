@@ -16,12 +16,17 @@ const Contact = () => {
     setFormData({ name: "", email: "", message: "" });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
-    <section id="contato" className="py-32 bg-background relative overflow-hidden">
+    <section
+      id="contato"
+      className="py-32 bg-background relative overflow-hidden"
+    >
       {/* Decorative elements */}
       <div className="absolute top-20 right-20 w-96 h-96 bg-secondary/20 rounded-full blur-3xl -z-10" />
       <div className="absolute bottom-20 left-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl -z-10" />
@@ -33,8 +38,9 @@ const Contact = () => {
               Vamos conversar?
             </h2>
             <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-              Adoro conectar com pessoas que compartilham a paixão por tecnologia com propósito. 
-              Entre em contato para colaborações, mentorias ou apenas uma boa conversa.
+              Adoro conectar com pessoas que compartilham a paixão por
+              tecnologia com propósito. Entre em contato para colaborações,
+              mentorias ou apenas uma boa conversa.
             </p>
           </div>
 
@@ -43,7 +49,10 @@ const Contact = () => {
             <div className="animate-fade-in">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="font-body text-sm uppercase tracking-wider text-foreground mb-2 block">
+                  <label
+                    htmlFor="name"
+                    className="font-body text-sm uppercase tracking-wider text-foreground mb-2 block"
+                  >
                     Nome
                   </label>
                   <input
@@ -57,7 +66,10 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="font-body text-sm uppercase tracking-wider text-foreground mb-2 block">
+                  <label
+                    htmlFor="email"
+                    className="font-body text-sm uppercase tracking-wider text-foreground mb-2 block"
+                  >
                     Email
                   </label>
                   <input
@@ -71,7 +83,10 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="font-body text-sm uppercase tracking-wider text-foreground mb-2 block">
+                  <label
+                    htmlFor="message"
+                    className="font-body text-sm uppercase tracking-wider text-foreground mb-2 block"
+                  >
                     Mensagem
                   </label>
                   <textarea
@@ -95,7 +110,10 @@ const Contact = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="animate-fade-in space-y-8" style={{ animationDelay: "0.2s" }}>
+            <div
+              className="animate-fade-in space-y-8"
+              style={{ animationDelay: "0.2s" }}
+            >
               <div>
                 <h3 className="font-display text-2xl font-semibold text-foreground mb-6">
                   Outras formas de contato
@@ -109,12 +127,16 @@ const Contact = () => {
                       <Mail size={20} />
                     </div>
                     <div>
-                      <p className="font-body text-sm text-muted-foreground">Email</p>
-                      <p className="font-body font-medium">patricia@example.com</p>
+                      <p className="font-body text-sm text-muted-foreground">
+                        Email
+                      </p>
+                      <p className="font-body font-medium">
+                        patriciaqueiroz35@gmail.com
+                      </p>
                     </div>
                   </a>
                   <a
-                    href="https://linkedin.com/in/patriciaqueiroz"
+                    href="https://www.linkedin.com/in/patyqueiroz/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors group"
@@ -123,12 +145,14 @@ const Contact = () => {
                       <Linkedin size={20} />
                     </div>
                     <div>
-                      <p className="font-body text-sm text-muted-foreground">LinkedIn</p>
-                      <p className="font-body font-medium">/patriciaqueiroz</p>
+                      <p className="font-body text-sm text-muted-foreground">
+                        LinkedIn
+                      </p>
+                      <p className="font-body font-medium">/in/patyqueiroz/</p>
                     </div>
                   </a>
                   <a
-                    href="https://github.com/patriciaqueiroz"
+                    href="https://github.com/PatQuei"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors group"
@@ -137,8 +161,12 @@ const Contact = () => {
                       <Github size={20} />
                     </div>
                     <div>
-                      <p className="font-body text-sm text-muted-foreground">GitHub</p>
-                      <p className="font-body font-medium">/patriciaqueiroz</p>
+                      <p className="font-body text-sm text-muted-foreground">
+                        GitHub
+                      </p>
+                      <p className="font-body font-medium">
+                        github.com/PatQuei
+                      </p>
                     </div>
                   </a>
                 </div>
@@ -151,19 +179,24 @@ const Contact = () => {
                 <ul className="space-y-3 font-body text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">→</span>
-                    Mentorias e consultorias em tecnologia
+                    Oportunidades na área de tecnologia, com foco em Engenharia
+                    de Software, IA Generativa ou Dados
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">→</span>
-                    Palestras sobre diversidade e inclusão
+                    Projetos que unam tecnologia e impacto social, especialmente
+                    voltados à inclusão digital, diversidade e equidade de
+                    gênero.
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">→</span>
-                    Colaborações em projetos de impacto social
+                    Colaborações em iniciativas ou comunidades que promovam
+                    formação e mentoria de mulheres na tecnologia.
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">→</span>
-                    Workshops e treinamentos para equipes
+                    Parcerias criativas em projetos que conectem educação,
+                    tecnologia e propósito humano.
                   </li>
                 </ul>
               </div>

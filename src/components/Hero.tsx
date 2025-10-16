@@ -1,8 +1,11 @@
-import heroImage from "@/assets/hero-bg.jpg";
+import heroImage from "@/assets/about-image.jpg";
 
 const Hero = () => {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -20,12 +23,19 @@ const Hero = () => {
           <br />
           <span className="text-primary">inclusão com propósito</span>
         </h1>
-        <p className="font-body text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-in-up leading-relaxed" style={{ animationDelay: "0.2s" }}>
-          Patricia Queiroz — Profissional de tecnologia apaixonada por criar pontes entre pessoas, 
-          código e transformação social.
+        <p
+          className="font-body text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-in-up leading-relaxed"
+          style={{ animationDelay: "0.2s" }}
+        >
+          Patricia Queiroz — Profissional de tecnologia apaixonada por criar
+          pontes entre pessoas, código e transformação social.
         </p>
         <button
-          onClick={() => document.getElementById("sobre")?.scrollIntoView({ behavior: "smooth" })}
+          onClick={() =>
+            document
+              .getElementById("sobre")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
           className="mt-12 px-8 py-4 bg-primary text-primary-foreground font-body text-sm uppercase tracking-wider rounded-full hover:bg-accent transition-all duration-300 hover-lift animate-fade-in-up"
           style={{ animationDelay: "0.4s" }}
         >

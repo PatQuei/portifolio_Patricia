@@ -24,7 +24,9 @@ const Navigation = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled ? "bg-background/95 backdrop-blur-sm shadow-sm" : "bg-transparent"
+        isScrolled
+          ? "bg-background/95 backdrop-blur-sm shadow-sm"
+          : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-6 py-6">
@@ -38,15 +40,17 @@ const Navigation = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            {["sobre", "projetos", "artigos", "contato"].map((item) => (
-              <button
-                key={item}
-                onClick={() => scrollToSection(item)}
-                className="font-body text-sm uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors"
-              >
-                {item}
-              </button>
-            ))}
+            {["sobre", "projetos", "eventos", "artigos", "contato"].map(
+              (item) => (
+                <button
+                  key={item}
+                  onClick={() => scrollToSection(item)}
+                  className="font-body text-sm uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors"
+                >
+                  {item}
+                </button>
+              )
+            )}
           </div>
 
           {/* Mobile Menu Button */}
@@ -62,15 +66,17 @@ const Navigation = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-6 pb-6 animate-fade-in">
             <div className="flex flex-col gap-4">
-              {["sobre", "projetos", "artigos", "contato"].map((item) => (
-                <button
-                  key={item}
-                  onClick={() => scrollToSection(item)}
-                  className="font-body text-sm uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors text-left"
-                >
-                  {item}
-                </button>
-              ))}
+              {["sobre", "projetos", "eventos", "artigos", "contato"].map(
+                (item) => (
+                  <button
+                    key={item}
+                    onClick={() => scrollToSection(item)}
+                    className="font-body text-sm uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors text-left"
+                  >
+                    {item}
+                  </button>
+                )
+              )}
             </div>
           </div>
         )}

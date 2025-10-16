@@ -1,4 +1,4 @@
-import aboutImage from "@/assets/about-image.jpg";
+import aboutImage from "@/assets/corporativa7.jpg";
 
 const About = () => {
   return (
@@ -24,30 +24,49 @@ const About = () => {
             </h2>
             <div className="space-y-6 font-body text-muted-foreground leading-relaxed">
               <p className="text-lg">
-                Sou Patricia Queiroz, profissional de tecnologia movida pela crença de que 
-                código pode — e deve — ser uma ferramenta de transformação social.
+                Sou Patricia Pereira Queiroz — curiosa por natureza, movida por
+                propósito e encantada pelo poder transformador da tecnologia.
               </p>
               <p>
-                Minha jornada começou com a curiosidade de entender como as coisas funcionam 
-                e evoluiu para uma missão de criar soluções tecnológicas que promovam inclusão, 
-                diversidade e igualdade de oportunidades.
+                Há mais de uma década atuo na Assurant, onde desenvolvi um olhar
+                analítico e estratégico sobre processos, dados e sistemas. Sou
+                grata por essa trajetória, que me proporcionou estabilidade,
+                aprendizado e a chance de entender como a tecnologia pode
+                facilitar o dia a dia das pessoas.
               </p>
               <p>
-                Como mãe e profissional, aprendi que a tecnologia mais poderosa é aquela 
-                que considera as pessoas em primeiro lugar. Cada linha de código que escrevo, 
-                cada projeto que lidero, carrega essa filosofia: <strong className="text-foreground">tecnologia 
-                com alma, feita por pessoas, para pessoas</strong>.
+                Mas foi fora do ambiente corporativo que descobri o que
+                realmente me inspira: usar a tecnologia para criar pontes{" "}
+                <strong className="text-foreground">
+                  — entre pessoas, oportunidades e futuros possíveis
+                </strong>
+                .
               </p>
               <p>
-                Atuo há mais de uma década na área de tecnologia, liderando projetos que vão 
-                desde desenvolvimento de software até iniciativas de engajamento social e 
-                capacitação de mulheres na tech. Acredito no poder da representatividade e 
-                trabalho ativamente para que mais vozes diversas ocupem espaços de decisão 
-                e inovação.
+                Minha verdadeira paixão nasceu nas trocas, nos estudos e nos
+                projetos que mostraram que programar é também um ato de
+                expressão e transformação social. Foi nesse caminho que
+                encontrei propósito em aprender, ensinar e incentivar outras
+                mulheres e meninas a acreditarem que também pertencem a esse
+                universo.
+                <p>
+                  {" "}
+                  Hoje, estou construindo uma transição para a Engenharia de
+                  Software, estudando IA Generativa e participando de
+                  iniciativas que unem tecnologia, inclusão e impacto social.
+                </p>
+                <b />
+                <p>
+                  Mãe solo, mulher na tecnologia e eterna aprendiz, acredito que
+                  a inovação ganha sentido quando nasce da empatia. Porque cada
+                  linha de código pode, sim, carregar propósito — e mudar um
+                  pedaço do mundo.
+                </p>
               </p>
               <p className="text-primary font-medium">
-                Minha missão é simples: usar minha experiência e privilégios para abrir portas, 
-                amplificar vozes e construir um futuro tecnológico mais justo e humano.
+                Minha missão é simples: usar minha experiência e privilégios
+                para abrir portas, amplificar vozes e construir um futuro
+                tecnológico mais justo e humano.
               </p>
             </div>
           </div>

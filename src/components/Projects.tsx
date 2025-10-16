@@ -1,29 +1,50 @@
 import { ExternalLink } from "lucide-react";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
+import project1 from "@/assets/bits_e_batons.png";
+import project2 from "@/assets/biblioteca.png";
+import project3 from "@/assets/cvbuilder.png";
+import project4 from "@/assets/portifoliopaulo2.jpg";
 
 const projects = [
   {
-    title: "Programa Mulheres na Tech",
-    description: "Iniciativa de capacitação e mentoria para inserção de mulheres em carreiras de tecnologia, com foco em diversidade e inclusão.",
+    title: "Bits e Batons: A Força Feminina no Mundo Digital",
+    description:
+      "Podcast criado para inspirar meninas e mulheres a explorarem o universo da tecnologia e da ciência de dados. Meu primeiro projeto com Inteligência Artificial, que despertou em mim o desejo de usar a tecnologia como ferramenta de inclusão e transformação social.",
     image: project1,
-    results: "120+ mulheres capacitadas | 70% de inserção no mercado",
-    tags: ["Educação", "Diversidade", "Mentoria"],
+    results:
+      "1ª experiência com IA | Projeto voltado à inclusão feminina na tecnologia",
+    tags: ["IA Generativa", "Diversidade", "Podcast", "Impacto Social"],
   },
   {
-    title: "Plataforma de Inclusão Digital",
-    description: "Sistema web desenvolvido para facilitar o acesso de comunidades periféricas a recursos educacionais de tecnologia.",
+    title: "Biblioteca Digital Interativa",
+    description:
+      "Sistema web colaborativo para gerenciamento e incentivo à leitura. Permite cadastrar, buscar e emprestar livros, além de promover a troca de experiências entre leitores. Projeto voltado à inclusão digital e ao acesso ao conhecimento.",
     image: project2,
-    results: "5.000+ usuários ativos | 15 comunidades atendidas",
-    tags: ["Desenvolvimento", "Social", "Open Source"],
+    results:
+      "Desenvolvimento colaborativo | Foco em educação e acesso à leitura",
+    tags: ["Desenvolvimento", "Educação", "Inclusão Digital", "React"],
   },
   {
-    title: "Tech for Good Summit",
-    description: "Organização e curadoria de evento anual reunindo líderes, desenvolvedores e ativistas para discutir tecnologia e impacto social.",
+    title: "CV Builder: Currículos Inteligentes com IA",
+    description:
+      "Aplicação desenvolvida para criar currículos personalizados utilizando Inteligência Artificial. O sistema gera descrições profissionais, organiza experiências e sugere melhorias de linguagem e estrutura, tornando o processo mais acessível para quem está começando na área de tecnologia.",
     image: project3,
-    results: "800+ participantes | 40+ palestras | 3 edições realizadas",
-    tags: ["Eventos", "Comunidade", "Liderança"],
+    results:
+      "100+ currículos gerados | IA aplicada à empregabilidade e inclusão",
+    tags: [
+      "IA Generativa",
+      "Desenvolvimento Web",
+      "Automação",
+      "Empregabilidade",
+    ],
+  },
+  {
+    title: "Portfólio Profissional — Paulo Emilio Pucci",
+    description:
+      "Desenvolvimento e identidade visual de portfólio digital voltado a destacar trajetória, projetos e estilo profissional. Foco em design limpo, storytelling autêntico e estruturação de conteúdo para LinkedIn e web.",
+    image: project4,
+    results:
+      "Design + Identidade | Projeto colaborativo de posicionamento profissional",
+    tags: ["Design", "Storytelling", "Portfólio", "UI/UX"],
   },
 ];
 
@@ -36,8 +57,8 @@ const Projects = () => {
             Projetos que transformam
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            Uma seleção de iniciativas profissionais e voluntárias que traduzem minha paixão 
-            por tecnologia inclusiva e impacto social.
+            Uma seleção de iniciativas profissionais e voluntárias que traduzem
+            minha paixão por tecnologia inclusiva e impacto social.
           </p>
         </div>
 
@@ -56,7 +77,7 @@ const Projects = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
-              
+
               <div className="p-8">
                 <h3 className="font-display text-2xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {project.title}
