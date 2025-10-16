@@ -41,26 +41,7 @@ const Contact = () => {
                     Email
                   </p>
                   <p className="font-body font-medium text-foreground text-sm">
-                    patriciaqueiroz35@gmail.com
-                  </p>
-                </div>
-              </a>
-
-              <a
-                href="https://wa.me/5511999574623"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex flex-col items-center gap-4 p-8 bg-card rounded-2xl text-muted-foreground hover:text-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group"
-              >
-                <div className="w-16 h-16 bg-background rounded-full flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
-                  <MessageCircle size={28} />
-                </div>
-                <div className="text-center">
-                  <p className="font-body text-sm text-muted-foreground mb-1">
-                    WhatsApp
-                  </p>
-                  <p className="font-body font-medium text-foreground">
-                    (11) 99957-4623
+                    Patricia Queiroz
                   </p>
                 </div>
               </a>
