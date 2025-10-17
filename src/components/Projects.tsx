@@ -8,7 +8,7 @@ const projects = [
   {
     title: "Bits e Batons: A Força Feminina no Mundo Digital",
     description:
-      "Podcast criado para inspirar meninas e mulheres a explorarem o universo da tecnologia e da ciência de dados. Meu primeiro projeto com Inteligência Artificial, que despertou em mim o desejo de usar a tecnologia como ferramenta de inclusão e transformação social.",
+      "Podcast criado durante um projeto de IA para inspirar meninas e mulheres a explorarem o universo da tecnologia e da ciência de dados. Meu primeiro projeto com Inteligência Artificial, que despertou em mim o desejo de usar a tecnologia como ferramenta de inclusão e transformação social.",
     image: project1,
     results:
       "1ª experiência com IA | Projeto voltado à inclusão feminina na tecnologia",
@@ -32,8 +32,7 @@ const projects = [
     description:
       "Aplicação desenvolvida para criar currículos personalizados utilizando Inteligência Artificial. O sistema gera descrições profissionais, organiza experiências e sugere melhorias de linguagem e estrutura, tornando o processo mais acessível para quem está começando na área de tecnologia.",
     image: project3,
-    results:
-      "100+ currículos gerados | IA aplicada à empregabilidade e inclusão",
+    results: "Produtividade | IA aplicada à empregabilidade e inclusão",
     tags: [
       "IA Generativa",
       "Desenvolvimento Web",
@@ -53,7 +52,7 @@ const projects = [
       "Design + Identidade | Projeto colaborativo de posicionamento profissional",
     tags: ["Design", "Storytelling", "Portfólio", "UI/UX"],
     repoUrl: null,
-    liveUrl: "https://paulopucci.com",
+    liveUrl: "https://pauloemiliopucci.vercel.app/",
   },
 ];
 

@@ -11,12 +11,16 @@ const Footer = () => {
             <span>© {currentYear} Patricia Queiroz.</span>
             <span className="hidden md:inline">Feito com</span>
             <Heart size={16} className="text-primary fill-primary" />
-            <span className="hidden md:inline">e propósito.</span>
+            <span className="hidden md:inline">, tecnologia e propósito.</span>
           </div>
-          
+
           <div className="flex items-center gap-6">
             <button
-              onClick={() => document.getElementById("hero")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() =>
+                document
+                  .getElementById("hero")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
               className="font-body text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               Voltar ao topo

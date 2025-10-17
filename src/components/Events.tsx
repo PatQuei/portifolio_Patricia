@@ -8,25 +8,27 @@ const Events = () => {
   const events = [
     {
       id: 1,
-      title: "Inovathon",
+      title: "WTM Inovathon 2025: InterLibras - Tecnologia para Inclusão",
       description:
-        "Participação no Inovathon, maratona de inovação focada em desenvolver soluções tecnológicas criativas e impactantes. Uma experiência enriquecedora de colaboração e desenvolvimento ágil.",
+        "Participação no Inovathon 2025, um desafio incrível de inovação e impacto social, onde nosso time desenvolveu o InterLibras, um app que traduz voz, texto e Libras em tempo real. Foi uma experiência transformadora, unindo tecnologia e inclusão para quebrar barreiras de comunicação e conectar pessoas.",
       image: inovathonImg,
       date: "2025",
     },
     {
       id: 2,
-      title: "Workshop LinkedIn",
+      title:
+        "Você no Controle: LinkedIn e Pitch Pessoal para começar sua Jornada Profissional",
       description:
-        "Workshop sobre estratégias de LinkedIn e Personal Branding, além de apresentação sobre desenvolvimento profissional na área de tecnologia. Compartilhando conhecimentos para impulsionar carreiras.",
+        "Workshop “Você no Controle: LinkedIn e Pitch Pessoal para começar sua Jornada Profissional”, voltado aos alunos da ETEC Itaquera I. 💡 A proposta foi inspirar jovens a se apresentarem com confiança e a usarem o LinkedIn de forma estratégica. Uma experiência de troca, aprendizado e superação que marcou o encerramento da nossa jornada na Fatec! 🚀",
       image: workshopImg,
       date: "2025",
     },
     {
       id: 3,
-      title: "Corrida e Caminhada Contra o Câncer de Mama",
+      title:
+        "Corrida e Caminhada Contra o Câncer de Mama - Grupo de Gênero - ESG Assurant",
       description:
-        "Participação em evento de conscientização e combate ao câncer de mama. Unindo tecnologia, saúde e responsabilidade social em uma causa importante.",
+        "Corrida e caminhada contra o cancer de mama, promovida pelo Grupo de Gênero da Assurant. Um evento que une saúde, bem-estar e responsabilidade social, reforçando a importância da conscientização e do apoio à causa.",
       image: corrida,
       date: "2025",
     },
